@@ -1,0 +1,5 @@
+build/
+Loop_out/
+csv/
+Plots/
+*.pdf
