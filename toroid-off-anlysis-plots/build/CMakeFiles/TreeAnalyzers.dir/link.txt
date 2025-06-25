@@ -1,0 +1,2 @@
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.40-acaab/x86_64-el9/bin/ar qc libTreeAnalyzers.a CMakeFiles/TreeAnalyzers.dir/Root/FitInfo.cpp.o CMakeFiles/TreeAnalyzers.dir/Root/Plotter.cpp.o CMakeFiles/TreeAnalyzers.dir/Root/stree.cpp.o CMakeFiles/TreeAnalyzers.dir/Root/tree.cpp.o
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.40-acaab/x86_64-el9/bin/ranlib libTreeAnalyzers.a
