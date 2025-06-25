@@ -11,12 +11,12 @@
   int option = 1;
   int num_bins = 60;
 
-  TFile infile[28] = {"$PWD/histograms/updated/ttbar-dilep.root", "$PWD/histograms/updated/ttbar-semilep.root",
-                      "$PWD/histograms/updated/wbos.root", "$PWD/histograms/updated/zbos.root", "$PWD/histograms/updated/gamma.root", 
-                      "$PWD/histograms/updated/bottom2.root", "$PWD/histograms/updated/bottom20.root", "$PWD/histograms/updated/bottom40.root", "$PWD/histograms/updated/bottom60.root", "$PWD/histograms/updated/bottom120.root",
-                      "$PWD/histograms/updated/charm2.root", "$PWD/histograms/updated/charm10.root","$PWD/histograms/updated/charm20.root", "$PWD/histograms/updated/charm40.root", "$PWD/histograms/updated/charm60.root", "$PWD/histograms/updated/charm120.root",
-                      "$PWD/histograms/updated/bb2.root", "$PWD/histograms/updated/bb20.root","$PWD/histograms/updated/bb40.root", "$PWD/histograms/updated/bb60.root", "$PWD/histograms/updated/bb120.root","$PWD/histograms/updated/bb200.root", 
-                      "$PWD/histograms/updated/cc2.root", "$PWD/histograms/updated/cc40.root", "$PWD/histograms/updated/cc40.root", "$PWD/histograms/updated/cc60.root", "$PWD/histograms/updated/cc120.root", "$PWD/histograms/updated/cc200.root"};
+  TFile infile[28] = {"$PWD/histograms/ttbar-dilep.root", "$PWD/histograms/ttbar-semilep.root",
+                      "$PWD/histograms/wbos.root", "$PWD/histograms/zbos.root", "$PWD/histograms/gamma.root", 
+                      "$PWD/histograms/bottom2.root", "$PWD/histograms/bottom20.root", "$PWD/histograms/bottom40.root", "$PWD/histograms/bottom60.root", "$PWD/histograms/bottom120.root",
+                      "$PWD/histograms/charm2.root", "$PWD/histograms/charm10.root","$PWD/histograms/charm20.root", "$PWD/histograms/charm40.root", "$PWD/histograms/charm60.root", "$PWD/histograms/charm120.root",
+                      "$PWD/histograms/bb2.root", "$PWD/histograms/bb20.root","$PWD/histograms/bb40.root", "$PWD/histograms/bb60.root", "$PWD/histograms/bb120.root","$PWD/histograms/bb200.root", 
+                      "$PWD/histograms/cc2.root", "$PWD/histograms/cc40.root", "$PWD/histograms/cc40.root", "$PWD/histograms/cc60.root", "$PWD/histograms/cc120.root", "$PWD/histograms/cc200.root"};
   
   TH1F *all_muons = new TH1F("sum", "sum", num_bins, 0, 120);
   TH1F *hist1 = new TH1F("Jet", "plot1", num_bins, 0, 120);

@@ -1121,12 +1121,12 @@ int MyAnalysis()
                         "/eos/user/a/atimoney/pythia/cc60.root",
                         "/eos/user/a/atimoney/pythia/cc120.root",
                         "/eos/user/a/atimoney/pythia/cc200.root"};
-    string outname[28] = {"histograms/updated/ttbar-dilep.root", "histograms/updated/ttbar-semilep.root",
-                        "histograms/updated/wbos.root", "histograms/updated/zbos.root", "histograms/updated/gamma.root", 
-                        "histograms/updated/bottom2.root", "histograms/updated/bottom20.root", "histograms/updated/bottom40.root", "histograms/updated/bottom60.root", "histograms/updated/bottom120.root",
-                        "histograms/updated/charm2.root", "histograms/updated/charm10.root", "histograms/updated/charm20.root", "histograms/updated/charm40.root", "histograms/updated/charm60.root", "histograms/updated/charm120.root", 
-                        "histograms/updated/bb2.root", "histograms/updated/bb20.root", "histograms/updated/bb40.root", "histograms/updated/bb60.root", "histograms/updated/bb120.root", "histograms/updated/bb200.root", 
-                        "histograms/updated/cc2.root", "histograms/updated/cc20.root", "histograms/updated/cc40.root", "histograms/updated/cc60.root", "histograms/updated/cc120.root", "histograms/updated/cc200.root"};
+    string outname[28] = {"histograms/ttbar-dilep.root", "histograms/ttbar-semilep.root",
+                        "histograms/wbos.root", "histograms/zbos.root", "histograms/gamma.root", 
+                        "histograms/bottom2.root", "histograms/bottom20.root", "histograms/bottom40.root", "histograms/bottom60.root", "histograms/bottom120.root",
+                        "histograms/charm2.root", "histograms/charm10.root", "histograms/charm20.root", "histograms/charm40.root", "histograms/charm60.root", "histograms/charm120.root", 
+                        "histograms/bb2.root", "histograms/bb20.root", "histograms/bb40.root", "histograms/bb60.root", "histograms/bb120.root", "histograms/bb200.root", 
+                        "histograms/cc2.root", "histograms/cc20.root", "histograms/cc40.root", "histograms/cc60.root", "histograms/cc120.root", "histograms/cc200.root"};
     // Cross section values [mb]
     double crosssec[28] = {
                         7.580e-09, 4.758e-08, 1.5990e-05, 1.594e-06, 5.223e-06, // dilep ttbar, semilep ttbar, wbos, zbos, gamma 

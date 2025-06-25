@@ -7,7 +7,7 @@
   // Load the analysis files
   // =======================
 
-  TFile infile = "$PWD/histograms/updated/wbos.root";
+  TFile infile = "$PWD/histograms/wbos.root";
 
   // TH1F *w_muon_pT = new TH1F("w_muon_pT", "w_muon_pT", 60, 0, 120);
   // TH1F *w_pT = new TH1F("w_pT", "w_pT", 60, 0, 120);
