@@ -1,0 +1,40 @@
+DataAnalysis Package
+
+First log into a node and set up ROOT:
+	srun --pty -p largemem --time=0-12:00:00 bash
+	source /cvmfs/sft.cern.ch/lcg/releases/LCG_98python3/ROOT/v6.22.00/x86_64-centos7-gcc8-opt/ROOT-env.sh
+Then run scripts in this order (commands to run are indented)
+
+
+MyPythiaSimul.cc
+----------------
+Generates events using Pythia simulator
+and implements the detector effects to output.
+a file with truth-level and reco-level data.
+Output: data.root
+Runs with:
+	cd run-pythia
+	./MyPythia8Simul MyPythia8Simul.cmnd -outroot data
+where the last field, "data", sets the name of the output file to "data.root"
+Batch files (ex: bbbar) can be run with:
+	sbatch bbbar.sbatch
+which submits the job. Job parameters are found at the heading of the document.
+
+MyAnalysis.C
+------------
+Runs the analysis on the ntuple, defines variables and flags, creates histograms.
+At the very top you can specify the name of the output file.
+At the bottom of the script in the main function, you can decide whether you want 
+to analyze all the files in the directory pythia-outputs/, or make a list of the 
+specific files in that directory that you want to analyze.
+Input: data.root
+Output: analysis.root
+Runs with:
+	cd analyze-pythia
+	root -x -l -q MyAnalysis.C
+
+Plotting files (ex: eventplots.cc)
+--------------------
+Plots observables, saves plots as png's in analyze-pythia/plots/ directory.
+Runs with:
+	root -x -l -q eventplots.cc
