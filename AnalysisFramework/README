@@ -32,6 +32,7 @@ Output: analysis.root
 Runs with:
 	cd analyze-pythia
 	root -x -l -q MyAnalysis.C
+The path to the folder with Alex's pythia simulations is: /cluster/tufts/beaucheminlab/atimon01/pythia/
 
 Plotting files (ex: eventplots.cc)
 --------------------
